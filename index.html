@@ -3,7 +3,11 @@
 <head></head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <b-alert show>Default alert</b-alert>
+        Name: <input v-model="name" type="text">
+        <hello-component :name="name" :initial-enthusiasm="5" />
+    </div>
 </body>
 <script src="./dist/build.js"></script>
 
